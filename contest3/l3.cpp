@@ -12,7 +12,7 @@ int main () {
 		}
 		else if (a[q] != b[q]) {
 			lr = a[q]; nt = b[q]; count++;
-			while (q < (int)a.size() && a[q] != b[q] && ((a[q] == lr && b[q] == nt) || (a[q] == nt && b[q] == lr))) q++;
+			while (q < (int)a.size() && a[q] != b[q]) q++;
 		}
 	}
 	std::cout << count;
